@@ -21,15 +21,19 @@ https://rna-tools.readthedocs.io/
 
 rna-tools: a toolbox to analyze structures and simulations of RNA
 
-### rna-tools.online
+    RNA-Puzzles toolkit: A computational resource of RNA 3D structure benchmark datasets, structure manipulation, and evaluation tools.
+    M. Magnus, M. Antczak, P. Lukasiak, J. Wiedemann, T. Zok, J. M. Bujnicki, E. Westhof, M. Szachniuk, and Z. Miao
+    Nucleic Acid Research, vol. 48, no. 2, pp. 576–588, Jan. 2020
 
-    rna-tools.online – a Swiss army knife for RNA 3D modeling workflows  
-    M. Magnus  
-    Nucleic Acid Research, 10.1093/nar/gkac372, May 2022  
+### rna-tools.online
 
 https://rna-tools.online
 
 rna-tools.online is an online gateway to some of the rna-tools functionalities
+
+    rna-tools.online – a Swiss army knife for RNA 3D modeling workflows  
+    M. Magnus  
+    Nucleic Acid Research, 10.1093/nar/gkac372, May 2022  
 
 ### emacs-pdb-mode
 
