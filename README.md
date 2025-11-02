@@ -14,9 +14,7 @@ rna-tutorials is a hands-on repository with shell scripts and command examples d
   <img src="https://github.com/user-attachments/assets/d36b2129-12ec-466d-b191-3d00fcb51dbd"
        alt="rna-tools"
        width="500">
-  rna-tools in colab
 </p>
-
 
 ## Tips
 
