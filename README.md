@@ -8,7 +8,11 @@ rna-tutorials is a hands-on repository with shell scripts and command examples d
 
 - `infernal-align-two-seqs-to-rfam-model` - The two tRNA molecules share an almost identical 3D fold despite only 63% sequence identity in their aligned regions.
 - `rna-3d-rmsd-for-tRNAs` - 3D structural alignment between two tRNA molecules
-  
+- `rna-tools in colab` https://colab.research.google.com/drive/1PsnQRAKbIhKGuxmhiZ5fSeBkjfQRieSS?usp=sharing
+
+![sc 2025-11-02 at 14 05 24](https://github.com/user-attachments/assets/7a33f952-bf58-482e-ba71-4b3ac0155824)
+rna-tools in colab
+
 ## Tips
 
 - see all tRNA structures - https://rfam.org/family/RF00005#tabview=tab6 
