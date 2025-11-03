@@ -8,13 +8,7 @@ rna-tutorials is a hands-on repository with shell scripts and command examples d
 
 - `infernal-align-two-seqs-to-rfam-model` - The two tRNA molecules share an almost identical 3D fold despite only 63% sequence identity in their aligned regions.
 - `rna-3d-rmsd-for-tRNAs` - 3D structural alignment between two tRNA molecules
-- `rna-tools in colab` https://colab.research.google.com/drive/1PsnQRAKbIhKGuxmhiZ5fSeBkjfQRieSS?usp=sharing
- 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/d36b2129-12ec-466d-b191-3d00fcb51dbd"
-       alt="rna-tools"
-       width="500">
-</p>
+
 
 ## RNA Edit
 
@@ -35,6 +29,14 @@ rna-tools: a toolbox to analyze structures and simulations of RNA
     RNA-Puzzles toolkit: A computational resource of RNA 3D structure benchmark datasets, structure manipulation, and evaluation tools.
     M. Magnus, M. Antczak, P. Lukasiak, J. Wiedemann, T. Zok, J. M. Bujnicki, E. Westhof, M. Szachniuk, and Z. Miao
     Nucleic Acid Research, vol. 48, no. 2, pp. 576–588, Jan. 2020
+
+`rna-tools in colab` https://colab.research.google.com/drive/1PsnQRAKbIhKGuxmhiZ5fSeBkjfQRieSS?usp=sharing
+ 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d36b2129-12ec-466d-b191-3d00fcb51dbd"
+       alt="rna-tools"
+       width="500">
+</p>
 
 ### rna-tools.online
 
