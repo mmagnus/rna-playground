@@ -15,7 +15,8 @@ rna-tutorials is a hands-on repository with shell scripts and command examples d
 1. Get secondary structure for tRNA (1ehz) #rnatools
      - using frabase (https://rnafrabase.cs.put.poznan.pl)
 1. Annotate secondary strucure for `tetraloop_steamOf1bp.pdb` (with rna-tools.online) #rnatools
-   
+1. Detect covariation from an RNA alignments and annotate RNA Secondary Structures (RNAView)[^2] with R-scape (`secondary-structure-covariation-and-annotation-with-rscape`)
+
 ## RNA Edit
 
   #TODO add extract with rna-tools
@@ -70,3 +71,5 @@ Emacs for editing files in the PDB format https://github.com/mmagnus/emacs-pdb-m
 https://www.rcsb.org/structure/1EHZ
 
 [^1]: https://rna-tools.readthedocs.io/en/latest/_modules/rna_tools/SecondaryStructure.html#parse_vienna_to_pairs
+
+[^2]: https://github.com/rcsb/RNAView
