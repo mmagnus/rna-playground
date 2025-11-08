@@ -2,133 +2,139 @@
 # R-scape 2.0.4.i (July 2024)
 # Copyright (C) 2017-2024 Elena Rivas, Harvard University.
 # Freely distributed under the GNU General Public License (GPLv3).
-Incorrect number of command line arguments.
-Usage: RNA Structural Covariation Above Phylogenetic Expectation [-options] <msafile>
+/Users/magnus/work/opt/r-scape/rscape_v2.0.4.i/bin/pdb_parse.pl -D 8.000000 -L 1 -W MIN -C esltmp8qT9gP -M esltmp2nFzb2 -R -S 1ehz_A.pdb 1ehz_RF00005.sto /Users/magnus/work/opt/r-scape/rscape_v2.0.4.i/bin  > /dev/null
+# ij in alignment | ij in pdbsequence | basepair type
+# 1 124 | -1 -1 | WWc
+# 2 123 | -1 -1 | WWc
+# 3 122 | -1 -1 | WWc
+# 4 121 | -1 -1 | WWc
+# 5 120 | -1 -1 | WWc
+# 6 119 | -1 -1 | WWc
+# 7 117 | -1 -1 | WWc
+# 14 35 | -1 -1 | WWc
+# 15 34 | -1 -1 | WWc
+# 16 33 | -1 -1 | WWc
+# 17 32 | -1 -1 | WWc
+# 39 58 | -1 -1 | WWc
+# 40 57 | -1 -1 | WWc
+# 41 56 | -1 -1 | WWc
+# 43 55 | -1 -1 | WWc
+# 44 54 | -1 -1 | WWc
+# 91 115 | -1 -1 | WWc
+# 92 114 | -1 -1 | WWc
+# 93 113 | -1 -1 | WWc
+# 95 112 | -1 -1 | WWc
+# 96 111 | -1 -1 | WWc
+# PDB:      1ehz_A.pdb
+# contacts  21 (21 bpairs 21 wc bpairs (0 pk))
+# maxD      8.00
+# mind      1
+# distance  MIN
+# L         74
+# alen      128
+# The WC basepairs:
+# (((((((,,<<<<_________>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))):
+#-------------------------------------------------------------------------------------------------------
+# MSA 1ehz_RF00005_1.1ehz_A nseq 512 (512) alen 74 (128) avgid 43.44 (42.28) nbpairs 21 (21)
+# One-set statistical test (all pairs are tested as equivalent) 
+#
+#
+# Method Target_E-val [cov_min,cov_max] [FP | TP True Found | Sen PPV F] 
+# GTp    0.05         [-9.95,1190.32]     [7 | 21 21 28 | 100.00 75.00 85.71] 
+#
+#       left_pos       right_pos        score          E-value           pvalue       substitutions      power
+#--------------------------------------------------------------------------------------------------------------
+*	      41	      56	1190.32342	4.55776e-72	1.68744e-75	250		1.00
+*	       2	     123	1075.90955	1.5809e-64	5.85302e-68	205		1.00
+*	      16	      33	1037.55218	5.32007e-62	1.96967e-65	128		1.00
+*	       3	     122	1024.19313	4.06259e-61	1.50411e-64	202		1.00
+*	      92	     114	998.02978	2.14591e-59	7.94488e-63	316		1.00
+*	       7	     117	991.00368	6.20516e-59	2.29736e-62	221		1.00
+*	      44	      54	970.07418	1.48868e-57	5.51157e-61	221		1.00
+*	      93	     113	963.07040	4.30413e-57	1.59353e-60	263		1.00
+*	      40	      57	950.86218	2.73814e-56	1.01375e-59	316		1.00
+*	       6	     119	941.65724	1.10509e-55	4.0914e-59	297		1.00
+*	       5	     120	918.22290	3.8705e-54	1.43299e-57	290		1.00
+*	       4	     121	883.39067	7.63099e-52	2.82524e-55	270		1.00
+*	      15	      34	865.49473	1.15106e-50	4.2616e-54	79		0.93
+*	      43	      55	782.66296	3.24264e-45	1.20053e-48	162		1.00
+*	      91	     115	769.59358	2.35965e-44	8.73621e-48	243		1.00
+*	      95	     112	715.83398	8.10132e-41	2.99938e-44	164		1.00
+*	       1	     124	647.41984	2.54388e-36	9.41828e-40	163		1.00
+*	      39	      58	646.39645	2.98197e-36	1.10403e-39	312		1.00
+*	      14	      35	340.32568	3.41138e-16	1.263e-19	113		0.99
+~	      19	      90	339.41742	3.90515e-16	1.44582e-19	153		1.00
+*	      17	      32	262.75399	3.78856e-11	1.40265e-14	149		1.00
+*	      96	     111	213.57121	5.72877e-08	2.12098e-11	48		0.86
+~	      25	     101	174.23858	1.89239e-05	7.00624e-09	99		0.97
+ 	      32	      87	155.65113	0.000282309	1.0452e-07	157		1.00
+~	      12	      33	151.33175	0.000529619	1.96083e-07	118		0.99
+~	      12	      16	144.95596	0.00132145	4.89245e-07	116		0.99
+~	      51	      52	144.28224	0.0014611	5.40946e-07	106		0.98
+~	      12	      17	131.08447	0.00956141	3.53995e-06	127		1.00
 
-where options are:
-  -h                 : show brief help on version and usage
-  -E <x>             : E-value target for base pair significance. E > 1000 means report all E-values  [0.05]  (x>=0)
-  -s                 : two-set test: basepairs / all other pairs. Requires a given structure
-  --samplecontacts   : basepair-set sample size is all contacts (default for amino acids)
-  --samplebp         : basepair-set sample size is all 12-type basepairs (default for RNA/DNA)
-  --samplewc         : basepair-set sample size is WWc basepairs only
-  --cacofold         : The CaCoFold structure including all covariation
-  --Rfam             : The CaCoFold structure w/o triplets/side/cross modules, overlaping or contiguou pairs
-  --outdir <s>       : specify a directory for all output files
-  --outname <s>      : specify a filename for all outputs
-  --r2rall           : make R2R plot all position in the alignment
-  -v                 : be verbose
-  --window <n>       : window size  (n>0)
-  --slide <n>        : window slide  [50]  (n>0)
-  --onemsa           : if file has more than one msa, analyze only the first one
-  --nofigures        : do not produce R2R and dotplot outputs
-  --roc              : write .roc file
-  -F <x>             : filter out seqs <x*seq_cons residues  (0<x<=1.0)
-  -I <x>             : require seqs to have < <x> id  [1.0]  (0<x<=1.0)
-  -i <x>             : require seqs to have >= <x> id  (0<=x<1.0)
-  --tstart <n>       : min alignment position to analyze [1..alen]  (n>0)
-  --tend <n>         : max alignment position to analyze [1..alen]  (n>0)
-  --consensus        : analyze only consensus (seq_cons) positions
-  --submsa <n>       : take n random sequences from the alignment, all if NULL  (n>0)
-  --nseqmin <n>      : minimum number of sequences in the alignment  (n>0)
-  --gapthresh <x>    : keep columns with < <x> fraction of gaps  [0.75]  (0<=x<=1)
-  --minid <x>        : minimum avgid of the given alignment  (0<x<=1.0)
-  --maxid <x>        : maximum avgid of the given alignment  (0<x<=1.0)
-  --treefile <s>     : provide external tree to use
-  --ntree <n>        : number of trees obtained by sequence rearrangements. Default is one from msa as is  [1]  (n>0)
-  --vshuffle         : shuffle the residues in a column
-  --cshuffle         : shuffle the columns of the alignment
-  --cntmaxD <x>      : max distance for contact definition  [8.0]  (x>0)
-  --pdb <f>          : read pdb structure from file <f>
-  --pdbchain <s>     : read a particular chain form pdbfile
-  --cntmind <n>      : min (j-i+1) for contact definition  [1]  (n>0)
-  --onlypdb          : use only structural info in pdbfile, ignore msa annotation if any
-  --informat <s>     : specify format
-  --nshuffle <n>     : number of shuffled alignments  (n>0)
-  --CHIa             : CHI  ASC corrected statistic
-  --CHIp             : CHI  APC corrected statistic
-  --CHI              : CHI  statistic
-  --GTa              : GT   ASC corrected statistic
-  --GTp              : GT   APC corrected statistic  [TRUE]
-  --GT               : GT   statistic
-  --MIa              : MI   ASC corrected statistic
-  --MIp              : MI   APC corrected statistic
-  --MI               : MI   statistic
-  --MIra             : MIr  ASC corrected statistic
-  --MIrp             : MIr  APC corrected statistic
-  --MIr              : MIr  statistic
-  --MIga             : MIg  ASC corrected statistic
-  --MIgp             : MIg  APC corrected statistic
-  --MIg              : MIg  statistic
-  --OMESa            : OMES ASC corrected statistic
-  --OMESp            : OMES APC corrected statistic
-  --OMES             : OMES statistic
-  --RAFa             : RNAalifold ASC corrected statistic
-  --RAFp             : RNAalifold APC corrected statistic
-  --RAF              : RNAalifold statistic
-  --RAFSa            : RNAalifold-stacking ASC corrected statistic
-  --RAFSp            : RNAalifold-stacking APC corrected statistic
-  --RAFS             : RNAalifold-stacking  statistic
-  --CCFa             : Correlation Coefficient with Frobenius norm ASC corrected statistic
-  --CCFp             : Correlation Coefficient with Frobenious norm  APC corrected statistic
-  --CCF              : Correlation Coefficient with Frobenious norm   statistic
-  --PTFp             : POTTS Frobenious ASC corrected statistic
-  --PTAp             : POTTS Averages   ASC corrected statistic
-  --PTDp             : POTTS DI         ASC corrected statistic
-  --C16              : use 16 covariation classes
-  --C2               : use 2 covariation classes
-  --CWC              : use only pairs the appear to be Watson-Crick
-  --CSELECT          : use C2 if nseq <= nseqthresh otherwise use C16  [TRUE]
-  --naive            : sort results by cov score, no null model involved
-  --givennull <f>    : use a given null distriburtion
-  --nullphylo        : nullphylo  statistics  [TRUE]
-  --savenull         : write null histogram
-  --nonparam         : non parameteric correlate  [TRUE]
-  --potts            : potts couplings
-  --dna              : use DNA alphabet
-  --rna              : use RNA alphabet
-  --amino            : use protein alphabet
-  --ptmuh <x>        : potts regularization parameters for training hi's  [0.01]  (x>=0)
-  --ptmue <x>        : potts regularization parameters for training eij's  [0.20]  (x>=0)
-  --PLM              : potts option for training
-  --APLM             : potts option for training
-  --outpotts         : write inferred potts parameters
-  --gremlin          : reproduce gremlin
-  --outmsa           : write actual msa used
-  --outtree          : write phylogenetic tree used
-  --outsubs          : write # of substitutions per alignment position
-  --outnull          : write null alignments
-  --outprep          : write pair representations
-  --prep_nohot       : write pair representations is don't want to use default onehot representation
-  --profmark         : write null alignments with the ss_cons of the original alignment, usefuls for a profmark
-  --allbranch        : output msa with all branges
-  --voutput          : verbose output
-  --power <f>        : calculate empirical power curve
-  --singlesubs       : calculate power using double substitutions, default is single substitutions  [TRUE]
-  --doublesubs       : calculate power using double substitutions, default is single substitutions
-  --joinsubs         : calculate power using join substitutions, default is single substitutions
-  --powergaps        : calculate power including res->gap changes (default is not)
-  --E_hlx <x>        : E-value target for Helix significance  [0.05]  (x>=0)
-  --fisher           : aggregation method: fisher
-  --lancaster        : aggregation method: lancaster
-  --lancaster_join   : aggregation method: lancaster
-  --lancaster_double : aggregation method: lancaster
-  --wfisher          : aggregation method: weighted fisher
-  --wfisher_join     : aggregation method: weighted fisher
-  --wfisher_double   : aggregation method: weighted fisher
-  --sidak            : aggregation method: sidak
-  --minhloop <n>     : minimum hairpin loop length. If i-j is the closing pair: minhloop = j-1-1. Default is 0  (n>=0)
-  --cyk              : folding algorithm is cyk (default). Options are [cyk,decoding]  [TRUE]
-  --decoding         : folding algorithm is decoding. Options are [cyk,decoding] (default is cyk)
-  --refseq           : TRUE: CaCoFold uses a RF sequence. Default creates a profileseq from the alignment
-  --allownegatives   : no pairs are forbidden for having power but no covariation
-  --covmin <n>       : min distance between covarying pairs to report the pair. Default 1 (contiguous)  [1]  (n>0)
-  --show_hoverlap    : TRUE to leave the overlap of alt helices with other helices
-  --draw_nonWC       : TRUE to draw annotated non WC basepairs
-  --E_neg <x>        : Evalue thresholds for negative pairs. Negative pairs require eval > <x>  [1.0]  (x>=0)
-  --RBG              : TRUE: use grammar RBG, default is RBGJ3J4
-  --r3d              : TRUE: use grammar R3D
-  --r3dfile <f>      : read r3d grammar from file <f>
-  --tol <x>          : tolerance  [1e-6]
-  --seed <n>         : set RNG seed to <n>. Use 0 for a random seed.  [42]  (n>=0)
-  --pmass <x>        : pmass for censored histogram of cov scores  [0.0005]  (0<x<=1)
+# The given structure
+
+# Power analysis of given structure 
+#
+# Powertype = SINGLE SUBSTITUTIONS
+# covary  left_pos      right_pos    substitutions      power
+#----------------------------------------------------------------
+     *    1		124		163		1.00
+     *    2		123		205		1.00
+     *    3		122		202		1.00
+     *    4		121		270		1.00
+     *    5		120		290		1.00
+     *    6		119		297		1.00
+     *    7		117		221		1.00
+     *    14		35		113		0.99
+     *    15		34		79		0.93
+     *    16		33		128		1.00
+     *    17		32		149		1.00
+     *    39		58		312		1.00
+     *    40		57		316		1.00
+     *    41		56		250		1.00
+     *    43		55		162		1.00
+     *    44		54		221		1.00
+     *    91		115		243		1.00
+     *    92		114		316		1.00
+     *    93		113		263		1.00
+     *    95		112		164		1.00
+     *    96		111		48		0.86
+#
+# BPAIRS 21
+# avg substitutions per BP  210.1
+# BPAIRS expected to covary 20.8 +/- 0.4
+# BPAIRS observed to covary 21
+#
+# RMs = 4 L = 125
+
+# RM_HELIX 14-17 32-35, nbp = 4 nbp_cov = 4
+# aggregated NONE
+NESTED  :::::::::<<<<_________>>>>::::::::::::::::::::::::::::::::::::::::::::::::
+        :::::::::<<<<_________>>>>::::::::::::::::::::::::::::::::::::::::::::::::
+NESTED  :::::::::::::<<<<______________>>>>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        :::::::::::::<<<<______________>>>>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+# RM_HELIX 39-44 54-58, nbp = 5 nbp_cov = 5
+# aggregated NONE
+NESTED  :::::::::::::::::::::::::::<<<<<_______>>>>>::::::::::::::::::::::::::::::
+        :::::::::::::::::::::::::::<<<<<_______>>>>>::::::::::::::::::::::::::::::
+NESTED  ::::::::::::::::::::::::::::::::::::::<<<-<<_________>>>>>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        ::::::::::::::::::::::::::::::::::::::<<<-<<_________>>>>>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+# RM_HELIX 91-96 111-115, nbp = 5 nbp_cov = 5
+# aggregated NONE
+NESTED  :::::::::::::::::::::::::::::::::::::::::::::::::<<<<<_______>>>>>::::::::
+        :::::::::::::::::::::::::::::::::::::::::::::::::<<<<<_______>>>>>::::::::
+NESTED  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<<<-<<______________>>>>>:::::::::::::
+        ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<<<-<<______________>>>>>:::::::::::::
+
+# RM_HELIX 1-7 117-124, nbp = 7 nbp_cov = 7
+# aggregated NONE
+NESTED  <<<<<<<___________________________________________________________>>>>>>>:
+        <<<<<<<___________________________________________________________>>>>>>>:
+NESTED  <<<<<<<_____________________________________________________________________________________________________________>->>>>>>::::
+        <<<<<<<_____________________________________________________________________________________________________________>->>>>>>::::
+# Number of covarying pairs = 28
+
