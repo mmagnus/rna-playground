@@ -1,0 +1,29 @@
+# ij in alignment | ij in pdbsequence | basepair type
+# 1 124 | -1 -1 | WWc
+# 2 123 | -1 -1 | WWc
+# 3 122 | -1 -1 | WWc
+# 4 121 | -1 -1 | WWc
+# 5 120 | -1 -1 | WWc
+# 6 119 | -1 -1 | WWc
+# 7 117 | -1 -1 | WWc
+# 14 35 | -1 -1 | WWc
+# 15 34 | -1 -1 | WWc
+# 16 33 | -1 -1 | WWc
+# 17 32 | -1 -1 | WWc
+# 39 58 | -1 -1 | WWc
+# 40 57 | -1 -1 | WWc
+# 41 56 | -1 -1 | WWc
+# 43 55 | -1 -1 | WWc
+# 44 54 | -1 -1 | WWc
+# 91 115 | -1 -1 | WWc
+# 92 114 | -1 -1 | WWc
+# 93 113 | -1 -1 | WWc
+# 95 112 | -1 -1 | WWc
+# 96 111 | -1 -1 | WWc
+# PDB:      1EHZ_fPDB.pdb
+# contacts  21 (21 bpairs 21 wc bpairs)
+# maxD      8.00
+# mind      1
+# distance  MIN
+# L         74
+# alen      128
